@@ -12,12 +12,16 @@ YELLOW="\e[1;33m"
 
 NC="\033[0m"
 
-############
-### DATA ###
-############
+#############
+### ALIAS ###
+#############
+
+alias update='apt update'
+alias upgradable='apt list --upgradable'
+alias upgrade='apt upgrade -y'
 
 ##############
 ### EXPORT ###
 ##############
 
-export PS1="\D{%H:%M:%S} ${RED}\u${YELLOW}@${GREEN}\h ${CYAN}[\w] ${CYAN}❱❱❱${NC} "
+export PS1="\t ${RED}\u${YELLOW}@${GREEN}\h ${CYAN}[\w] ${CYAN}❱❱❱${NC} "

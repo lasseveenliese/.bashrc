@@ -1,6 +1,8 @@
 # Get .bashrc
 ```
 cd
+sudo apt update
+sudo apt install -y wget
 wget https://raw.githubusercontent.com/lasseveenliese/.bashrc/refs/heads/main/.bashrc
 source .bashrc
 ```

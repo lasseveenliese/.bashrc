@@ -19,9 +19,15 @@ NC="\033[0m"
 alias update='apt update'
 alias upgradable='apt list --upgradable'
 alias upgrade='apt upgrade -y'
+alias install='apt install'
+alias deinstall='apt purge --remove'
+alias autoremove='apt autoremove'
 
 ##############
 ### EXPORT ###
 ##############
 
-export PS1="\t ${RED}\u${YELLOW}@${GREEN}\h ${CYAN}[\w] ${CYAN}❱❱❱${NC} "
+# export PS1="\t ${RED}\u${YELLOW}@${GREEN}\h ${CYAN}[\w] ${CYAN}❱❱❱${NC} "
+# export PS1="\t ${RED}\u${YELLOW}@${GREEN}\h ${CYAN}[\w] ${CYAN} ^}  ^}  ^} ${NC} "
+# export PS1="\t ${RED}\u${YELLOW}@${GREEN}\h ${CYAN}[\w] ${CYAN}[\$(awk '{printf \"%.2f\", \$1}' /proc/loadavg)] ❱❱❱${NC} "
+export PS1="\t ${RED}\u${YELLOW}@${GREEN}\h ${CYAN}[\w] ${CYAN}[\$(awk '{printf \"%.2f\", \$1}' /proc/loadavg)] /// ${NC}"
